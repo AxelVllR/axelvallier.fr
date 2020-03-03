@@ -21,25 +21,28 @@
             <h1>Axel Vallier - Développeur PHP / Symfony</h1>
             <h2>En recherche d'alternance</h2>
         </div>
-        <div class="contact">
-            <a href="">Me Contacter</a>
+        <div class="contact_me">
+            <a href="#cont">Me Contacter</a>
         </div>
     </header>
-    <form action="controller/mailer.php" method="post">
-        <input type="text" name="name" id="" placeholder="Axel Vallier">
-        <input type="email" name="mail" id="" placeholder="info@axelvallier.fr">
-        <textarea name="content" id="" cols="30" rows="10">
-        </textarea>
-        <input type="submit" value="ENVOYER" name="submit">
-    </form>
-    <p><?php 
-        if(isset($_GET['er']))
-        {
-            if($_GET['er'] == 1)
+    <div class="contact" id="cont">
+        <h1>Me Contacter</h1>
+        <form action="controller/mailer.php" method="post">
+            <input type="text" name="name" id="" placeholder="Axel Vallier">
+            <input type="email" name="mail" id="" placeholder="info@axelvallier.fr">
+            <textarea name="content" id="" cols="50" rows="10">
+            </textarea>
+            <input type="submit" value="ENVOYER" name="submit" id="sub">
+        </form>
+        <p><?php 
+            if(isset($_GET['er']))
             {
-                echo 'Remplissez tous les champs !';
+                if($_GET['er'] == 1)
+                {
+                    echo 'Remplissez tous les champs !';
+                }
             }
-        }
-    ?></p>
+        ?></p>
+    </div>
 </body>
 </html>

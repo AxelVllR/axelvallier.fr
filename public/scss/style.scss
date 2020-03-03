@@ -1,6 +1,7 @@
 @import 'libs/reset.scss';
 html {
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 }
 
 header {
@@ -70,7 +71,7 @@ header {
         }
     }
 
-    .contact {
+    .contact_me {
         z-index: 9997;
        display: flex;
        justify-content: center;
@@ -91,5 +92,58 @@ header {
                background-color: transparent;
            }
        }
+    }
+}
+
+.contact {
+    padding: 50px 0 50px 0; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(253, 10, 10, 0.274);
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    form {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+        input {
+            background-color: transparent;
+            align-self: center;
+            width: 50%;
+            border: none;
+            border-bottom: 2px solid rgba(66, 66, 66, 0.575);
+            margin: 10px 0 10px 0;
+            font-size: 1.2em;
+            transition: all .3s ease-in-out;
+            &:focus {
+                border-color: red;
+                outline: none;
+            }
+        }
+        textarea {
+            margin: 20px 0 20px 0;
+            border: 2px solid rgba(66, 66, 66, 0.575);
+            border-radius: 20px;
+            resize: none;
+            transition: all .3s ease-in-out;
+            &:focus {
+                border-color: red;
+                outline: none;
+            }
+        }
+        #sub {
+            border: none;
+            background-color: rgba(197, 54, 54, 0.486);
+        }
+    }
+    p {
+        color: red;
     }
 }
