@@ -43,6 +43,17 @@ table {
   border-spacing: 0;
 }
 
+#progress {
+  height: 3px;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  background-color: rgba(255, 210, 7, 0.651);
+  z-index: 9999;
+  -webkit-transition: width .25s ease-in-out;
+  transition: width .25s ease-in-out;
+}
+
 html {
   font-family: 'Poppins';
   scroll-behavior: smooth;
@@ -78,28 +89,46 @@ header::before {
 }
 
 header nav {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  padding: 20px;
   background-color: rgba(253, 10, 10, 0.247);
   z-index: 9999;
 }
 
 header nav ul {
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header nav ul li {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header nav ul li a {
+  text-decoration: none;
   color: white;
   padding-bottom: 2px;
   -webkit-transition: all .1s ease-in-out;
@@ -107,7 +136,7 @@ header nav ul li {
   font-size: 1.3em;
 }
 
-header nav ul li:hover {
+header nav ul li a:hover {
   border-bottom: 2px solid white;
 }
 
@@ -193,7 +222,7 @@ header .contact_me a:hover {
 }
 
 .contact form {
-  width: 30%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +240,7 @@ header .contact_me a:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 50%;
+  width: 70%;
   border: none;
   border-bottom: 2px solid rgba(66, 66, 66, 0.575);
   margin: 10px 0 10px 0;
@@ -226,6 +255,7 @@ header .contact_me a:hover {
 }
 
 .contact form textarea {
+  font-size: 1.2em;
   margin: 20px 0 20px 0;
   border: 2px solid rgba(66, 66, 66, 0.575);
   border-radius: 20px;
@@ -246,5 +276,47 @@ header .contact_me a:hover {
 
 .contact p {
   color: red;
+}
+
+footer {
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+  width: 100%;
+  background-color: rgba(253, 10, 10, 0.384);
+  border-top: 2px solid rgba(87, 35, 35, 0.575);
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .social a {
+  margin: 0 10px 0 10px;
+  margin-top: 15px;
+  font-size: 2em;
+  color: rgba(128, 128, 128, 0.678);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+footer .social a:hover {
+  color: gray;
 }
 /*# sourceMappingURL=style.css.map */

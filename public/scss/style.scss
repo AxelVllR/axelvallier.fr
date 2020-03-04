@@ -1,4 +1,15 @@
 @import 'libs/reset.scss';
+
+#progress {
+    height: 3px;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    background-color: rgba(255, 210, 7, 0.651);
+    z-index: 9999;
+    transition: width .25s ease-in-out;
+}
+
 html {
     font-family: 'Poppins';
     scroll-behavior: smooth;
@@ -26,27 +37,35 @@ header {
     height: 70vh;
 
     nav {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         width: 100%;
         position: fixed;
         top: 0;
         left: 0;
-        padding: 20px;
         background-color: rgba(253, 10, 10, 0.247);
         z-index: 9999;
         ul {
+            height: 100%;
             width: 100%;
             display: flex;
             justify-content: space-around;
-            align-items: flex-start;
+            align-items: center;
 
             li {
-                color: white;
-                padding-bottom: 2px;
-                transition: all .1s ease-in-out;
-                font-size: 1.3em;
+                align-self: center;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    padding-bottom: 2px;
+                    transition: all .1s ease-in-out;
+                    font-size: 1.3em;
 
-                &:hover {
-                    border-bottom: 2px solid white;
+                    &:hover {
+                        border-bottom: 2px solid white;
+                    }
                 }
             }
         }
@@ -108,7 +127,7 @@ header {
         margin-bottom: 20px;
     }
     form {
-        width: 30%;
+        width: 50%;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -116,7 +135,7 @@ header {
         input {
             background-color: transparent;
             align-self: center;
-            width: 50%;
+            width: 70%;
             border: none;
             border-bottom: 2px solid rgba(66, 66, 66, 0.575);
             margin: 10px 0 10px 0;
@@ -128,6 +147,7 @@ header {
             }
         }
         textarea {
+            font-size: 1.2em;
             margin: 20px 0 20px 0;
             border: 2px solid rgba(66, 66, 66, 0.575);
             border-radius: 20px;
@@ -145,5 +165,34 @@ header {
     }
     p {
         color: red;
+    }
+}
+
+footer {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    background-color: rgba(253, 10, 10, 0.384);
+    border-top: 2px solid rgba(87, 35, 35, 0.575);
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            margin: 0 10px 0 10px;
+            margin-top: 15px;
+            font-size: 2em;
+            color: rgba(128, 128, 128, 0.678);
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: gray;
+            }
+        }
     }
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/style.css">
+    <script src="https://kit.fontawesome.com/e144745512.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
     <title>Axel VALLIER - Développeur PHP</title>
 </head>
@@ -11,12 +12,13 @@
     <header>
         <nav>
             <ul>
-                <li>A Propos</li>
-                <li>Projets</li>
-                <li>Skills</li>
-                <li>Contact</li>
+                <li><a href="">A Propos</a></li>
+                <li><a href="">Projets</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="#cont">Contact</a></li>
             </ul>
         </nav>
+        <div id="progress"></div>
         <div class="title">
             <h1>Axel Vallier - Développeur PHP / Symfony</h1>
             <h2>En recherche d'alternance</h2>
@@ -44,5 +46,13 @@
             }
         ?></p>
     </div>
+    <footer>
+        <p>&copy Axel Vallier, Tous droits reservés.</p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/axel-vallier-555954187/" target="_blank"><span class="fab fa-linkedin"></span></a>
+            <a href="https://github.com/AxelVllR" target="_blank"><span class="fab fa-github"></span></a>
+        </div>
+    </footer>
+    <script src="public/js/app.js"></script>
 </body>
 </html>
