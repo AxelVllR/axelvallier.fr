@@ -104,7 +104,7 @@ header nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(253, 10, 10, 0.247);
+  background-color: rgba(253, 10, 10, 0.384);
   z-index: 9999;
 }
 
@@ -340,6 +340,7 @@ header .contact_me a:hover {
 }
 
 .about p {
+  display: inline-block;
   padding: 20px;
   background-color: rgba(235, 235, 235, 0.76);
   color: black;
@@ -395,5 +396,145 @@ footer .social a:hover {
   width: 100%;
   height: 1vh;
   background-color: rgba(97, 11, 11, 0.815);
+}
+
+.projects {
+  padding: 40px 0 40px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(207, 163, 163, 0.171);
+}
+
+.projects > h1 {
+  font-size: 3em;
+  margin: 20px 0 40px 0;
+  color: white;
+  padding: 10px;
+  background-color: #923737;
+}
+
+.projects .list_projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 20px 0;
+}
+
+.projects .list_projects .singleProject {
+  padding: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: gray 0px 5px 15px;
+          box-shadow: gray 0px 5px 15px;
+  background-color: rgba(153, 90, 90, 0.329);
+  text-align: center;
+  width: 30%;
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.projects .list_projects .singleProject:hover {
+  -webkit-box-shadow: gray 0px 5px 10px;
+          box-shadow: gray 0px 5px 10px;
+  background-color: rgba(153, 90, 90, 0.411);
+}
+
+.projects .list_projects .singleProject .status {
+  display: inline-block;
+  padding: 5px;
+  color: white;
+  margin: 10px 0 10px 0;
+}
+
+.projects .list_projects .singleProject .dispo {
+  background-color: rgba(0, 128, 0, 0.616);
+}
+
+.projects .list_projects .singleProject .en_cours {
+  background-color: rgba(255, 166, 0, 0.616);
+}
+
+.projects .list_projects .singleProject .mom_indisp {
+  background-color: rgba(255, 0, 0, 0.616);
+}
+
+.projects .list_projects .singleProject > img {
+  width: 40%;
+  border-radius: 50%;
+  border: 2px solid #b84444;
+}
+
+.projects .list_projects .singleProject > a {
+  margin-bottom: 10px;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #b83030;
+  background-color: #b83030;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  color: white;
+  border-radius: 20px;
+}
+
+.projects .list_projects .singleProject > a:hover {
+  background-color: rgba(184, 48, 48, 0.349);
+  color: white;
+}
+
+.projects .list_projects .singleProject > h1 {
+  color: rgba(37, 22, 22, 0.808);
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.projects .list_projects .singleProject > img {
+  margin: 10px 0 10px 0;
+}
+
+.projects .list_projects .singleProject .text_project {
+  font-style: italic;
+}
+
+.projects .list_projects .singleProject .techno_project {
+  margin: 10px 0 10px 0;
+}
+
+.projects .list_projects .singleProject .techno_project strong {
+  font-weight: bold;
+}
+
+.projects .list_projects .singleProject .date {
+  color: gray;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+<?php require 'controller/main.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +13,9 @@
     <header class="headroom">
         <nav>
             <ul>
-                <li><a href="">A Propos</a></li>
-                <li><a href="">Projets</a></li>
-                <li><a href="">Skills</a></li>
+                <li><a href="#ab">A Propos</a></li>
+                <li><a href="#proj">Projets</a></li>
+                <li><a href="#skl">Skills</a></li>
                 <li><a href="#cont">Contact</a></li>
             </ul>
         </nav>
@@ -28,9 +29,18 @@
         </div>
     </header>
     <div class="split"></div>
-    <div class="about">
+    <div id="ab" class="about">
         <h1>Who am I ?</h1>
         <p>Bonjour, je m'appelle Axel, Fan de nouvelles Technos et de développement. Actuellement, j'étudie le développement d'application par le biais de PHP et du FrameWork Symfony</p>
+    </div>
+    <div id="proj" class="projects">
+        <h1>Mes Projets</h1>
+        <div class="list_projects">
+            <?php $chalets->displayAll([$chalets, $gbaf]); ?>
+        </div>
+    </div>
+    <div class="skills">
+
     </div>
     <div class="contact" id="cont">
         <h1>Me Contacter</h1>
