@@ -1,2 +1,6 @@
 vendor/phpmailer/*
 controller/mailer.php
+controller/.htaccess
+vendor/.htaccess
+.htpasswd
+.vscode/*
