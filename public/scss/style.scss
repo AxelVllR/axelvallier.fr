@@ -7,7 +7,7 @@
     left: 0;
     background-color: rgba(255, 210, 7, 0.651);
     z-index: 9999;
-    transition: width .25s ease-in-out;
+    transition: width .15s ease-in-out;
 }
 
 html {
@@ -47,6 +47,12 @@ header {
         left: 0;
         background-color: rgba(253, 10, 10, 0.247);
         z-index: 9999;
+        .headroom--pinned {
+            top: 0
+          }
+          .headroom--unpinned {
+            top: -40%
+          }
         ul {
             height: 100%;
             width: 100%;
@@ -148,10 +154,12 @@ header {
         }
         textarea {
             font-size: 1.2em;
+            padding: 10px;
             margin: 20px 0 20px 0;
             border: 2px solid rgba(66, 66, 66, 0.575);
             border-radius: 20px;
             resize: none;
+            text-align: left;
             transition: all .3s ease-in-out;
             &:focus {
                 border-color: red;
@@ -159,12 +167,64 @@ header {
             }
         }
         #sub {
-            border: none;
+            border: 2px solid rgba(197, 54, 54, 0.486);
+            transition: all .3s ease-in-out;
             background-color: rgba(197, 54, 54, 0.486);
+            border-radius: 15px;
+            width: 50%;
+
+            &:hover {
+                color: white;
+                border-color: white;
+                background-color: rgba(128, 128, 128, 0.37);
+            }
         }
     }
     p {
         color: red;
+    }
+}
+
+.about {
+    z-index: 999;
+    background-image: url('../img/about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+        content: " ";
+        position: absolute;
+        top: 71vh;
+        width: 100%;
+        height: 30vh;
+        color: white;
+        background-color: rgba(207, 84, 84, 0.575);
+    }
+
+    h1 {
+        color: white;
+        font-weight: bold;
+        z-index:1000;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+
+    }
+
+    p {
+        padding: 20px;
+        background-color: rgba(235, 235, 235, 0.76);
+        color: black;
+        font-style: italic;
+        font-weight: 400;
+        z-index: 1000;
+        width: 50%;
     }
 }
 
@@ -195,4 +255,10 @@ footer {
             }
         }
     }
+}
+
+.split {
+    width: 100%;
+    height: 1vh;
+    background-color: rgba(97, 11, 11, 0.815);
 }

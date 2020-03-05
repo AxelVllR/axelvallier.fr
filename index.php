@@ -9,7 +9,7 @@
     <title>Axel VALLIER - Développeur PHP</title>
 </head>
 <body>
-    <header>
+    <header class="headroom">
         <nav>
             <ul>
                 <li><a href="">A Propos</a></li>
@@ -27,6 +27,11 @@
             <a href="#cont">Me Contacter</a>
         </div>
     </header>
+    <div class="split"></div>
+    <div class="about">
+        <h1>Who am I ?</h1>
+        <p>Bonjour, je m'appelle Axel, Fan de nouvelles Technos et de développement. Actuellement, j'étudie le développement d'application par le biais de PHP et du FrameWork Symfony</p>
+    </div>
     <div class="contact" id="cont">
         <h1>Me Contacter</h1>
         <form action="controller/mailer.php" method="post">

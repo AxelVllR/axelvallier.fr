@@ -50,8 +50,8 @@ table {
   left: 0;
   background-color: rgba(255, 210, 7, 0.651);
   z-index: 9999;
-  -webkit-transition: width .25s ease-in-out;
-  transition: width .25s ease-in-out;
+  -webkit-transition: width .15s ease-in-out;
+  transition: width .15s ease-in-out;
 }
 
 html {
@@ -106,6 +106,14 @@ header nav {
   left: 0;
   background-color: rgba(253, 10, 10, 0.247);
   z-index: 9999;
+}
+
+header nav .headroom--pinned {
+  top: 0;
+}
+
+header nav .headroom--unpinned {
+  top: -40%;
 }
 
 header nav ul {
@@ -256,10 +264,12 @@ header .contact_me a:hover {
 
 .contact form textarea {
   font-size: 1.2em;
+  padding: 10px;
   margin: 20px 0 20px 0;
   border: 2px solid rgba(66, 66, 66, 0.575);
   border-radius: 20px;
   resize: none;
+  text-align: left;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -270,12 +280,73 @@ header .contact_me a:hover {
 }
 
 .contact form #sub {
-  border: none;
+  border: 2px solid rgba(197, 54, 54, 0.486);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   background-color: rgba(197, 54, 54, 0.486);
+  border-radius: 15px;
+  width: 50%;
+}
+
+.contact form #sub:hover {
+  color: white;
+  border-color: white;
+  background-color: rgba(128, 128, 128, 0.37);
 }
 
 .contact p {
   color: red;
+}
+
+.about {
+  z-index: 999;
+  background-image: url("../img/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.about::before {
+  content: " ";
+  position: absolute;
+  top: 71vh;
+  width: 100%;
+  height: 30vh;
+  color: white;
+  background-color: rgba(207, 84, 84, 0.575);
+}
+
+.about h1 {
+  color: white;
+  font-weight: bold;
+  z-index: 1000;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  padding: 20px;
+  background-color: rgba(235, 235, 235, 0.76);
+  color: black;
+  font-style: italic;
+  font-weight: 400;
+  z-index: 1000;
+  width: 50%;
 }
 
 footer {
@@ -318,5 +389,11 @@ footer .social a {
 
 footer .social a:hover {
   color: gray;
+}
+
+.split {
+  width: 100%;
+  height: 1vh;
+  background-color: rgba(97, 11, 11, 0.815);
 }
 /*# sourceMappingURL=style.css.map */
