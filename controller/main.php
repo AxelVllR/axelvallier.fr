@@ -116,7 +116,7 @@ $gbaf = new Project([
     'techno' => 'PHP, MySQL, HTML5, CSS3',
     'img' => 'public/img/logo-gbaf.png',
     'link' => 'http://www.axelvallier.fr/gbaf',
-    'warning' => 1
+    'warning' => 3
 ]);
 
 
