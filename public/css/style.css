@@ -148,6 +148,20 @@ header nav ul li a:hover {
   border-bottom: 2px solid white;
 }
 
+header nav ul li .blog_btn {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(110, 31, 31, 0.452);
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+header nav ul li .blog_btn:hover {
+  -webkit-box-shadow: 0px 0px 10px white;
+          box-shadow: 0px 0px 10px white;
+  border-bottom: none;
+}
+
 header .title {
   text-align: center;
   color: white;
@@ -226,7 +240,9 @@ header .contact_me a:hover {
 
 .contact h1 {
   font-size: 2em;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: white;
 }
 
 .contact form {
@@ -342,7 +358,7 @@ header .contact_me a:hover {
 .about p {
   display: inline-block;
   padding: 20px;
-  background-color: rgba(235, 235, 235, 0.76);
+  background-color: rgba(235, 235, 235, 0.849);
   color: black;
   font-style: italic;
   font-weight: 400;
@@ -536,5 +552,85 @@ footer .social a:hover {
 
 .projects .list_projects .singleProject .date {
   color: gray;
+}
+
+.skills {
+  border-top: 2px solid rgba(212, 141, 141, 0.322);
+  border-bottom: 2px solid rgba(190, 100, 100, 0.377);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0 50px 0;
+  background-color: rgba(212, 141, 141, 0.26);
+}
+
+.skills h1 {
+  font-size: 3em;
+  margin: 20px 0 40px 0;
+  color: white;
+  padding: 10px;
+  background-color: #af704c;
+}
+
+.skillbar {
+  position: relative;
+  display: block;
+  margin: 15px 0 15px 0;
+  width: 80%;
+  background: #eee;
+  height: 35px;
+  border-radius: 3px;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+}
+
+.skillbar .skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px;
+}
+
+.skillbar .skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6adcfa;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar .skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.skillbar .skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4);
 }
 /*# sourceMappingURL=style.css.map */

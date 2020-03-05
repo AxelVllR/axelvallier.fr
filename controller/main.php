@@ -9,7 +9,7 @@ class Project {
     private $_link;
     private $_warning;
 
-    const DISPO = 'DISPONIBLE';
+    const DISPO = 'disponible';
     const EN_COURS = 'Production en Cours';
     const MOM_INDISP = 'Momentanement Indisponible';
 

@@ -73,6 +73,17 @@ header {
                         border-bottom: 2px solid white;
                     }
                 }
+                .blog_btn {
+                    padding: 10px;
+                    border-radius: 4px;
+                    background-color: rgba(110, 31, 31, 0.452);
+                    transition: all .25s ease-in-out;
+
+                    &:hover {
+                        box-shadow: 0px 0px 10px white;
+                        border-bottom: none;
+                    }
+                }
             }
         }
     }
@@ -130,7 +141,9 @@ header {
     background-color: rgba(253, 10, 10, 0.274);
     h1 {
         font-size: 2em;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        padding: 10px;
+        background-color: white;
     }
     form {
         width: 50%;
@@ -220,7 +233,7 @@ header {
     p {
         display: inline-block;
         padding: 20px;
-        background-color: rgba(235, 235, 235, 0.76);
+        background-color: rgba(235, 235, 235, 0.849);
         color: black;
         font-style: italic;
         font-weight: 400;
@@ -374,5 +387,78 @@ footer {
                 color: gray;
             }
         }
+    }
+}
+
+// lk
+
+.skills {
+    border-top: 2px solid rgba(212, 141, 141, 0.322);
+    border-bottom: 2px solid rgba(190, 100, 100, 0.377);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 50px 0;
+    background-color: rgba(212, 141, 141, 0.26);
+
+    h1 {
+        font-size: 3em;
+        margin: 20px 0 40px 0;
+        color: white;
+        padding: 10px;
+        background-color:rgb(175, 112, 76);
+    }
+}
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin:15px 0 15px 0;
+    width:80%;
+	background:#eee;
+    height:35px;
+	border-radius:3px;
+	transition:0.1s linear;
+    transition-property:width, background-color;
+
+    .skillbar-bar {
+        height:35px;
+        width:0px;
+        background:#6adcfa;
+        border-radius:3px;
+    }
+    
+    .skillbar-title {
+        position:absolute;
+        top:0;
+        left:0;
+        width:110px;
+        font-weight:bold;
+        font-size:13px;
+        color:#ffffff;
+        background:#6adcfa;
+        border-top-left-radius:3px;
+        border-bottom-left-radius:3px;
+
+        span {
+            display:block;
+            background:rgba(0, 0, 0, 0.1);
+            padding:0 20px;
+            height:35px;
+            line-height:35px;
+            border-top-left-radius:3px;
+            border-bottom-left-radius:3px;
+        }
+    }
+
+    .skill-bar-percent {
+        position:absolute;
+        right:10px;
+        top:0;
+        font-size:11px;
+        height:35px;
+        line-height:35px;
+        color:#ffffff;
+        color:rgba(0, 0, 0, 0.4);
     }
 }

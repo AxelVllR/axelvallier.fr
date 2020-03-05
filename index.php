@@ -8,6 +8,16 @@
     <script src="https://kit.fontawesome.com/e144745512.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
     <title>Axel VALLIER - Développeur PHP</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    jQuery(document).ready(function(){
+        jQuery('.skillbar').each(function(){
+            jQuery(this).find('.skillbar-bar').animate({
+                width:jQuery(this).attr('data-percent')
+            },4000);
+        });
+    });
+    </script>
 </head>
 <body>
     <header class="headroom">
@@ -17,6 +27,7 @@
                 <li><a href="#proj">Projets</a></li>
                 <li><a href="#skl">Skills</a></li>
                 <li><a href="#cont">Contact</a></li>
+                <li><a href="#" class="blog_btn">BLOG</a></li>
             </ul>
         </nav>
         <div id="progress"></div>
@@ -39,8 +50,49 @@
             <?php $chalets->displayAll([$chalets, $gbaf]); ?>
         </div>
     </div>
-    <div class="skills">
+    <div id="skl" class="skills">
+        <h1>Skills</h1>
+        <div class="skillbar clearfix " data-percent="90%">
+            <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+            <div class="skillbar-bar" style="background: #e67e22;"></div>
+            <div class="skill-bar-percent">90%</div>
+        </div>
 
+        <div class="skillbar clearfix " data-percent="85%">
+            <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+            <div class="skillbar-bar" style="background: #3498db;"></div>
+            <div class="skill-bar-percent">85%</div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="68%">
+            <div class="skillbar-title" style="background: #2c3e50;"><span>PHP</span></div>
+            <div class="skillbar-bar" style="background: #2c3e50;"></div>
+            <div class="skill-bar-percent">68%</div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title" style="background: #46465e;"><span>MySQL</span></div>
+            <div class="skillbar-bar" style="background: #5a68a5;"></div>
+            <div class="skill-bar-percent">75%</div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title" style="background: #333333;"><span>Wordpress</span></div>
+            <div class="skillbar-bar" style="background: #525252;"></div>
+            <div class="skill-bar-percent">75%</div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="20%">
+            <div class="skillbar-title" style="background: #27ae60;"><span>SymFony</span></div>
+            <div class="skillbar-bar" style="background: #2ecc71;"></div>
+            <div class="skill-bar-percent">20%</div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="70%">
+            <div class="skillbar-title" style="background: #124e8c;"><span>Figma</span></div>
+            <div class="skillbar-bar" style="background: #4288d0;"></div>
+            <div class="skill-bar-percent">70%</div>
+        </div>
     </div>
     <div class="contact" id="cont">
         <h1>Me Contacter</h1>
