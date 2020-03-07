@@ -462,7 +462,7 @@ footer .social a:hover {
           box-shadow: gray 0px 5px 15px;
   background-color: rgba(153, 90, 90, 0.329);
   text-align: center;
-  width: 30%;
+  width: 40%;
   margin: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -632,5 +632,50 @@ footer .social a:hover {
   line-height: 35px;
   color: #ffffff;
   color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 765px) {
+  nav {
+    visibility: hidden;
+  }
+  #progress {
+    top: 0;
+  }
+  .about {
+    height: auto;
+    padding: 40px 0 40px 0;
+  }
+  .about h1 {
+    padding: 10px;
+    background-color: #b84a4a;
+  }
+  .about::before {
+    visibility: hidden;
+  }
+  .projects {
+    width: 100%;
+  }
+  .projects h1 {
+    margin: 10px 5px 10px 5px;
+  }
+  .list_projects {
+    width: 100%;
+  }
+  .singleProject {
+    min-width: 80%;
+  }
+  .singleProject img {
+    height: 40%;
+  }
+  form {
+    min-width: 80%;
+  }
+  #sub {
+    min-width: 80%;
+  }
+  footer {
+    height: auto;
+    padding: 20px 0 20px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

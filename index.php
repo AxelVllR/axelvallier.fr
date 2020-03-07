@@ -1,4 +1,5 @@
-<?php require 'controller/main.php'; ?>
+<?php 
+require 'controller/main.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,6 +88,12 @@
             <div class="skillbar-title" style="background: #27ae60;"><span>SymFony</span></div>
             <div class="skillbar-bar" style="background: #2ecc71;"></div>
             <div class="skill-bar-percent">20%</div>
+        </div>
+
+        <div class="skillbar clearfix " data-percent="50%">
+            <div class="skillbar-title" style="background: #fc9403;"><span>JavaScript</span></div>
+            <div class="skillbar-bar" style="background: #fca903;"></div>
+            <div class="skill-bar-percent">50%</div>
         </div>
 
         <div class="skillbar clearfix " data-percent="70%">
