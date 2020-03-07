@@ -3,6 +3,5 @@
 
 **This Portfolio is really simple**
 
-I just added some informations about me.
-
-I Will add changes soon don't worry.
+>I just added some informations about me.
+>I Will add changes soon don't worry.
