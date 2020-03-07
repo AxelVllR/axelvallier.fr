@@ -119,4 +119,13 @@ $gbaf = new Project([
     'warning' => 1
 ]);
 
+$blog = new Project([
+    'name' => 'Blog',
+    'date' => 'Mars 2020',
+    'text' => 'Mise en place d\'un Blog avec Symfony',
+    'techno' => 'PHP, MySQL, HTML5, CSS3, Symfony',
+    'img' => 'public/img/symfony.png',
+    'link' => '#',
+    'warning' => 2
+]);
 

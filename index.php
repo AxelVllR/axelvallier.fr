@@ -49,7 +49,7 @@ require 'controller/main.php'; ?>
     <div id="proj" class="projects">
         <h1>Mes Projets</h1>
         <div class="list_projects">
-            <?php $chalets->displayAll([$chalets, $gbaf]); ?>
+            <?php $chalets->displayAll([$chalets, $gbaf, $blog]); ?>
         </div>
     </div>
     <div id="skl" class="skills">
